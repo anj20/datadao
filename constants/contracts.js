@@ -1,0 +1,9 @@
+const Contracts = {
+  // DataDAOFactory: "0x48Efc5Caa73E5B2716eb27Dc0b537B8600177a79",
+  DataDAOFactory: "0x85CbE1EE6dC31EA3Cf5d7aE84928e1daBBD7877c",
+  LockFactory: "0x824a6a985680f965a66B91F31FE4A583c85D53c6",
+};
+
+export default Contracts;
+
+// 0xC1be9082Ff815F1A126894DEa3c205f9C4903658
