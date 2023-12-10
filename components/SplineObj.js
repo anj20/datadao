@@ -21,14 +21,10 @@ const SplineObj = (props) => {
         setDesktop(false);
       }
     };
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
   }, []);
-  return (
-    <Suspense fallback={<>Loading</>}>
-      {isDesktop?(<Spline className="absolute top-0 right-0" scene={props.scene} />):<></>}
-    </Suspense>
-  );
+  return <></>;
 };
 
 Spline.propTypes = {};

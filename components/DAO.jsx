@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHammer, faList, faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { useSmartContract } from "../hooks/useSmartContract";
+// import { IoMdCreate } from "react-icons/io";
 
 const ProposalStore = () => {
   const { getDataDaoMetadata, createDataDao } = useSmartContract();
@@ -93,31 +94,31 @@ const CreateProposal = () => {
   };
   return (
     <div className="w-10/12 h-full flex flex-col justify-start items-start gap-5 px-5">
-      <h1 className="text-white text-5xl">Proposal Builder</h1>
-      <h1 className="text-2xl text-white">Name your Proposal</h1>
+      <h1 className="text-white text-5xl">Build Proposal</h1>
+      {/* <h1 className="text-2xl text-white">Name your Proposal</h1> */}
       <div className="user-box w-full md:w-1/3">
-        <div className="relative inline-block px-4 py-2 font-medium group w-full sm:w-96">
-          <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-          <span className="absolute rounded-lg inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-tertiary"></span>
+        <div className="relative inline-block px-4 py-2 font-medium group w-full sm:w-96 bg-gray-300 rounded-lg">
+          {/* <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+          <span className="absolute rounded-lg inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-tertiary"></span> */}
           <textarea
             type="text"
             name="user_name"
-            className="w-full px-8 rounded text-black relative"
+            className="w-full px-8 rounded text-gray-400 relative"
             required
             onInput={(e) => setProposal(e.target.value)}
           ></textarea>
-          <label className="px-5">{"Proposal Title*"}</label>
+          <label className="px-5">{"Give the title for Proposal*"}</label>
         </div>
       </div>
       <div className="w-full h-full flex flex-col sm:flex-row justify-end items-center">
-        <div className="relative inline-block px-4 py-2 font-medium group w-full sm:w-96">
-          <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-          <span className="absolute rounded-lg inset-0 w-full h-full bg-secondary border-2 border-black group-hover:bg-tertiary"></span>
+        <div className="relative inline-block text-center px-4 py-2 font-medium group w-full sm:w-96 bg-orange-400 hover:bg-orange-600 rounded-lg">
+          {/* <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+          <span className="absolute rounded-lg inset-0 w-full h-full bg-secondary border-2 border-black group-hover:bg-tertiary"></span> */}
           <button
             className="relative text-black text-xl font-semibold"
             onClick={() => someFx()}
           >
-            Deploy Proposal!
+            Let's Deploy your proposal
           </button>
         </div>
       </div>
@@ -133,15 +134,15 @@ const DAO = (props) => {
       <div className="w-full h-fit sm:w-10/12 sm:h-10/12 flex justify-evenly items-center mt-20 sm:mt-0 backdrop-blur-md bg-quaternary/60 rounded-xl text-white border border-secondary/40 hover:border-secondary/70">
         <div className="w-full h-full flex flex-col sm:flex-row justify-evenly items-start py-10 text-xl gap-3">
           <div className="w-full sm:w-2/12 h-full flex flex-row sm:flex-col justify-start items-start border-r-2 border-primary/40 sm:mx-2 gap-5">
-            <div className="w-full h-fit flex flex-col sm:flex-row justify-start items-center bg-cyan-500/30 p-3 gap-3">
+            <div className="w-full h-fit flex flex-col sm:flex-row justify-start items-center bg-green-500/30 p-3 gap-3">
               <img
                 class="p-1 w-12 h-12 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                 src="/pic1.png"
                 alt="Bordered avatar"
               />
               <div className="w-full h-full flex flex-row sm:flex-col justify-evenly items-center">
-                <h1 className="text-white text-sm">0x1234567890</h1>
-                <h1 className="text-white text-sm">$ 5.76</h1>
+                <h1 className="text-gray-400 text-sm">0x1234567890</h1>
+                <h1 className="text-gray-400 text-sm">$ 5.76</h1>
               </div>
             </div>
             <ul className="w-full">

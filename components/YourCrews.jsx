@@ -20,7 +20,7 @@ const YourCrews = () => {
   const [crews, setCrews] = useState([
     {
       id: 1,
-      name: "Crew 1",
+      name: "Collection 1",
       description: "Crew 1 description",
       members: 100,
       status: "Active",
@@ -30,7 +30,7 @@ const YourCrews = () => {
     },
     {
       id: 2,
-      name: "Crew 2",
+      name: "Collection 2",
       description: "Crew 2 description",
       members: 200,
       status: "Active",
@@ -51,11 +51,11 @@ const YourCrews = () => {
                 >
                   <div className="w-full h-full flex flex-col sm:flex-row justify-evenly items-center">
                     <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-white font-raleway">
-                      Yo' Crews
+                      Your Collections
                     </h1>
-                    <div className="relative inline-block px-4 py-2 font-medium group w-full sm:w-96">
-                      <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                      <span className="absolute rounded-lg inset-0 w-full h-full bg-secondary border-2 border-black group-hover:bg-tertiary"></span>
+                    <div className="relative inline-block px-4 py-2 font-medium group w-full sm:w-96 text-center bg-orange-400 hover:bg-orange-700 rounded-lg">
+                      {/* <span className="absolute rounded-lg inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-tertiary border-[2px] border-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                      <span className="absolute rounded-lg inset-0 w-full h-full bg-orange-600 border-2 border-black group-hover:bg-tertiary"></span> */}
                       <button
                         className="relative text-black text-xl font-semibold"
                         onClick={() => setMakeNewCrew(true)}

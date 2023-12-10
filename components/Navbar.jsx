@@ -52,7 +52,7 @@ const Navbar = (props) => {
   });
 
   return (
-    <div id="navbar" className="navbar sticky top-0 z-50 text-tertiary">
+    <div id="navbar" className="navbar sticky top-0 z-50 text-blue-300">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -11,10 +11,10 @@
 }
 
 :root {
-  --primary: #11379F,
-  --secondary: #489BF1,
-  --tertiary: #2EEE92,
-  --quaternary: #0D0E18,
+  --primary: #2C3E50;     /* Dark Slate Gray */
+  --secondary: #3498DB;   /* Dodger Blue */
+  --tertiary: #27AE60;    /* Nephritis Green */
+  --quaternary: #ECF0F1;  /* Clouds Gray */
 }
 
 table {

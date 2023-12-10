@@ -31,7 +31,7 @@ const Home = (props) => {
         </div>
       )}
       <footer className="bg-quaternary w-full h-fit sticky z-50 bottom-0">
-        <div className="max-w-7xl mx-auto p-1 overflow-hidden">
+        <div className="max-w-7xl mx-auto p-1">
           <h1 className="text-xl text-white">Made with ❤️ for EthIndia</h1>
         </div>
       </footer>
